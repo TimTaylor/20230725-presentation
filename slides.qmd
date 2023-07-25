@@ -1,0 +1,90 @@
+---
+title: "Reusable code"
+author: "Tim Taylor"
+format:
+    revealjs:
+        incremental: true
+output-dir: docs
+date: 25 July 2023
+---
+
+## What are the end goals?
+
+:::{.incremental}
+- Save time;
+- reduce mistakes;
+- improve transparency; and
+- fun?
+:::
+
+. . .
+
+More generally, we want to make our lives, and those of our colleagues (both current and future) easier.
+
+---
+
+![Obligatory [xkcd comic](https://xkcd.com/1319).](https://imgs.xkcd.com/comics/automation.png){fig-alt="xkcd comic illustrating that you can spend more time automating a task than actually doing the task. It juxtaposes two charts of 'theory' versus 'reality'." fig-align="center"}
+
+## Not just a technical problem
+
+- How do you curate what you produce?
+- How do you review the work?
+- Do you adapt a standardised approach within the group?
+
+---
+
+## Documentation is key
+
+. . . 
+
+This includes:
+
+- The source code (what other developers look at).
+- Function documentation and package vignettes (end user documentation).
+- Onboarding / group documentation
+
+. . .
+
+This applies to all code, not just packaged code.
+
+---
+
+## R packages
+
+- A way to distribute useful functionality (e.g. statistical techniques).
+- Approx 20,000 packages on CRAN.
+- Enforce a structure for you to work to.
+- Lot's of tooling available to help (both built in to R and through wider package ecosystem).
+
+---
+
+## Source hosting
+
+[git](https://git-scm.com/) is great to use as your version control system and [GitHub](github.com) great for hosting your repositories. Lot's of tooling built around both of these.
+
+---
+
+## Package hosting
+
+- [CRAN](https://cran.r-project.org/)
+    - Released packages; simple to use; provides integration testing as dependencies move forward.
+- [R-Universe](https://r-universe.dev/search/)
+    - Useful for sharing binaries of packages not on CRAN
+- [drat](https://eddelbuettel.github.io/drat/)
+    - Self hosting of packages (source only), easiest to use with GitHub
+
+
+---
+
+## Challenges
+
+- IT infrastructure
+- Ensuring packages that are not on CRAN continue to work
+- Capacity
+
+---
+
+## Getting started
+
+- [R packages](https://r-pkgs.org/)
+- [Happy Git and Github for the useR](https://happygitwithr.com/)
